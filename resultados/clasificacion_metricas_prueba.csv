@@ -1,0 +1,7 @@
+,exactitud,exactitud balanceada,precisión,sensibilidad (recall),F1,AUC,Brier
+"Logística C=0.01, umbral 0.56 (de validación)",0.7648,0.706,0.8151,0.8561,0.8351,0.8143,0.1577
+"Logística C=0.01, umbral 0.50",0.7708,0.6872,0.7964,0.9007,0.8454,0.8143,0.1577
+"Bosque aleatorio hoja≥20, umbral 0.50",0.7628,0.6814,0.7943,0.8892,0.8391,0.8089,0.1589
+"Logística solo con max_hoy, umbral 0.70 (de validación)",0.6997,0.724,0.8762,0.6619,0.7541,0.803,0.1615
+Persistencia (mañana = hoy),0.7497,0.7045,0.8201,0.8201,0.8201,,0.2503
+Tasa base (probabilidad constante),0.6957,0.5,0.6957,1.0,0.8205,,0.2155

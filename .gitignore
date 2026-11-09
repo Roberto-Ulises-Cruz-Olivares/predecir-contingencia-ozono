@@ -1,0 +1,4 @@
+.venv_proyecto/
+__pycache__/
+.ipynb_checkpoints/
+*.tmp

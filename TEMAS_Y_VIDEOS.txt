@@ -1,0 +1,215 @@
+TEMAS MATEMÁTICOS DEL PROYECTO "PREDECIR CONTINGENCIA" Y UN VIDEO POR TEMA
+==========================================================================
+
+Cómo usar esta lista
+- Está en el orden en que conviene estudiarla: cada tema usa los anteriores.
+- "Dónde" dice en qué parte del proyecto aparece el tema.
+- Todos los links de YouTube se comprobaron el 9 de noviembre de 2026 (título y
+  canal reales). Los de scikit-learn y dm.test también. Los de otexts.com/fpp3
+  no se pudieron comprobar automáticamente (el sitio bloquea robots); si alguno
+  no abre, entra a https://otexts.com/fpp3/ y busca la sección por su número.
+- Casi todos los videos están en inglés, porque ahí está el mejor material.
+  En YouTube: Configuración > Subtítulos > Traducir automáticamente > Español.
+- Los temas marcados con (LECTURA) no tienen un video realmente bueno;
+  ahí va el capítulo del libro, que es corto y es la mejor fuente.
+
+Libro de referencia de toda la parte de pronóstico (gratis, en línea):
+  Hyndman y Athanasopoulos, "Forecasting: Principles and Practice", 3a ed.
+  https://otexts.com/fpp3/
+  Lista de videos oficial del libro (canal OTexts, lo explica el autor):
+  https://www.youtube.com/playlist?list=PLyCNZ_xXGzpm7W9jLqbIyBAiSO5jDwJeE
+
+
+BLOQUE A. BASES (se usan en todo el proyecto)
+---------------------------------------------
+
+A1. Distribución normal
+    Dónde: intervalos del 80 % y 95 %, y la probabilidad de llegar a 155 ppb.
+    Video: StatQuest - The Normal Distribution, Clearly Explained
+    https://www.youtube.com/watch?v=rzFX5NWojp0
+
+A2. Máxima verosimilitud
+    Dónde: así se estiman los coeficientes del ARIMA y de la regresión logística.
+    Video: StatQuest - Maximum Likelihood, clearly explained
+    https://www.youtube.com/watch?v=XepXtl9YKwc
+
+A3. Series de Fourier (senos y cosenos para describir algo periódico)
+    Dónde: los regresores sin1, cos1, sin2, cos2 que modelan la temporada anual.
+    Video: 3Blue1Brown - But what is a Fourier series?
+    https://www.youtube.com/watch?v=r6sGWTCMz2k
+
+
+BLOQUE B. SERIES DE TIEMPO (notebook 2)
+---------------------------------------
+
+B1. Estacionariedad
+    Dónde: sección 4; decide que no hay que diferenciar la serie (d = 0).
+    Video: ritvikmath - Time Series Talk: Stationarity
+    https://www.youtube.com/watch?v=oY-j2Wof51c
+
+B2. Autocorrelación y autocorrelación parcial (ACF y PACF)
+    Dónde: figura 05; de ahí sale que el modelo es un AR(1).
+    Video: ritvikmath - Time Series Talk: Autocorrelation and Partial Autocorrelation
+    https://www.youtube.com/watch?v=DeORzP0go5I
+
+B3. Modelo autorregresivo AR(p)
+    Dónde: es el corazón del modelo elegido. phi = 0.51.
+    Video: ritvikmath - Time Series Talk: Autoregressive Model
+    https://www.youtube.com/watch?v=5-2C4eO4cPQ
+
+B4. Modelo de media móvil MA(q)
+    Dónde: candidatos (1,0,1) de la validación y el SARIMA "de libro".
+    Video: ritvikmath - Time Series Talk: Moving Average Model
+    https://www.youtube.com/watch?v=voryLhxiPzE
+
+B5. ARMA
+    Video: ritvikmath - Time Series Talk: ARMA Model
+    https://www.youtube.com/watch?v=HhvTlaN06AM
+
+B6. ARIMA (la "I" es diferenciar) y el método de Box-Jenkins
+    Dónde: todo el notebook 2 sigue Box-Jenkins: identificar, estimar, diagnosticar.
+    Video: ritvikmath - Time Series Talk: ARIMA Model
+    https://www.youtube.com/watch?v=3UmyHed0iYE
+
+B7. SARIMA (ARIMA con parte estacional)
+    Dónde: SARIMA(1,1,1)(1,0,1)7 de referencia y el SARIMA horario con s = 24.
+    Video: ritvikmath - Time Series Talk: Seasonal ARIMA Model
+    https://www.youtube.com/watch?v=WjeGUs6mzXg
+
+B8. Prueba de Dickey-Fuller aumentada (ADF) y KPSS
+    Dónde: sección 4, tabla de estacionariedad.
+    Video (ADF): ritvikmath - Time Series Talk: Augmented Dickey Fuller Test + Code
+    https://www.youtube.com/watch?v=1opjnegd_hA
+    (LECTURA para KPSS y cómo se combinan las dos): FPP3, sección 9.1
+    https://otexts.com/fpp3/stationarity.html
+
+B9. Regresión armónica dinámica (regresión con términos de Fourier + errores ARMA)
+    Dónde: ES EL MODELO DEL PROYECTO. Sección 3 y 5 del notebook 2.
+    Video: OTexts (Rob Hyndman) - Forecasting Principles & Practice: 10.5 Dynamic harmonic regression
+    https://www.youtube.com/watch?v=0dfmZ5x1OZI
+    Lectura que lo acompaña: https://otexts.com/fpp3/dhr.html
+    Antes conviene leer 10.1 (regresión con errores ARIMA): https://otexts.com/fpp3/regarima.html
+
+B10. Selección de modelo con AIC
+    Dónde: columna AIC de la tabla de candidatos. (El proyecto elige por RMSE de
+    validación, no por AIC, pero hay que saber leerlo.)
+    Video: ritvikmath - Time Series Model Selection (AIC & BIC)
+    https://www.youtube.com/watch?v=McEN54l3EPU
+
+B11. Diagnóstico de residuos: ruido blanco y prueba de Ljung-Box
+    Dónde: sección 6, figura 06.
+    Video: Bhavesh Bhatt - Ljung-Box Test for Detecting White Noise using Python
+    https://www.youtube.com/watch?v=caXvSH_EltM
+    Lectura (mejor que el video): FPP3, sección 5.4
+    https://otexts.com/fpp3/diagnostics.html
+
+B12. Modelos de espacio de estados y filtro de Kalman
+    Dónde: es lo que hace SARIMAX por dentro. Por eso el modelo tolera días sin
+    dato y por eso se puede pronosticar a 1 día con parámetros fijos (función un_paso).
+    Video 1 (intuición): Visually Explained - Kalman Filters
+    https://www.youtube.com/watch?v=IFeCIbljreY
+    Video 2 (serie completa): MATLAB - Understanding Kalman Filters, Part 1
+    https://www.youtube.com/watch?v=mwn8xhgNpFY
+
+B13. Evaluar pronósticos: partición temporal, MAE, RMSE, MASE, referencias ingenuas
+    Dónde: secciones 5, 7 y 8 (persistencia, climatología, ingenuo semanal).
+    (LECTURA): FPP3, secciones 5.2 (métodos simples), 5.8 (medidas de error)
+    y 5.10 (validación cruzada temporal)
+    https://otexts.com/fpp3/simple-methods.html
+    https://otexts.com/fpp3/accuracy.html
+    https://otexts.com/fpp3/tscv.html
+    Los videos de esas secciones están en la lista oficial del libro (arriba).
+
+B14. Intervalos de predicción
+    Dónde: bandas del 80 % y 95 % y su cobertura en la prueba.
+    (LECTURA): FPP3, sección 5.5
+    https://otexts.com/fpp3/prediction-intervals.html
+
+B15. Prueba de Diebold-Mariano (¿un pronóstico es significativamente mejor que otro?)
+    Dónde: columna "vs modelo (Diebold-Mariano)" de la tabla de la prueba.
+    (LECTURA) No encontré un video confiable. Lo mejor es el artículo corto del
+    propio autor, que explica qué supone la prueba y cuándo NO usarla:
+    Diebold (2015), "Comparing Predictive Accuracy, Twenty Years Later",
+    Journal of Business & Economic Statistics 33(1). Búscalo por título: el
+    autor lo tiene gratis en su página (no pongo link directo porque no lo
+    pude comprobar).
+    Y la función de referencia (con la corrección de Harvey-Leybourne-Newbold
+    que usa el notebook): https://pkg.robjhyndman.com/forecast/reference/dm.test.html
+
+
+BLOQUE C. EVALUAR PROBABILIDADES Y CLASIFICADORES (notebooks 2 y 3)
+-------------------------------------------------------------------
+
+C1. Matriz de confusión
+    Video: StatQuest - Machine Learning Fundamentals: The Confusion Matrix
+    https://www.youtube.com/watch?v=Kdsp6soqA7o
+
+C2. Sensibilidad, especificidad, precisión (de aquí sale la exactitud balanceada)
+    Video: StatQuest - Machine Learning Fundamentals: Sensitivity and Specificity
+    https://www.youtube.com/watch?v=vP06aMoz4v8
+
+C3. Curva ROC y AUC
+    Dónde: AUC 0.91 de la alerta de 155 ppb y AUC 0.81 de "mañana > 90 ppb".
+    Video: StatQuest - ROC and AUC, Clearly Explained!
+    https://www.youtube.com/watch?v=4jRBRDbJemM
+
+C4. Puntaje de Brier, Brier skill score y calibración
+    Dónde: BSS 0.12 de la alerta; Brier 0.159 del clasificador.
+    Video: DataMListic - Model Calibration - Brier Score Explained
+    https://www.youtube.com/watch?v=BiaebXlgfNQ
+
+
+BLOQUE D. REDUCCIÓN DIMENSIONAL Y CLUSTERIZACIÓN (notebook 3)
+-------------------------------------------------------------
+
+D1. Análisis de componentes principales (PCA)
+    Dónde: 288 variables (mes x hora) -> 3 componentes.
+    Video: StatQuest - Principal Component Analysis (PCA), Step-by-Step
+    https://www.youtube.com/watch?v=FgakZw6K1QQ
+
+D2. K-means
+    Dónde: las 3 zonas de ozono.
+    Video: StatQuest - K-means clustering
+    https://www.youtube.com/watch?v=4b5d3muPQmA
+
+D3. Clusterización jerárquica (Ward)
+    Dónde: segundo método con el que se comprueba que las zonas son estables.
+    Video: StatQuest - Hierarchical Clustering
+    https://www.youtube.com/watch?v=7xHsRkOdVwo
+
+D4. Coeficiente de silueta (para elegir k)
+    Video: PhyLosophy - What Is Silhouette Score? Visually Explained
+    https://www.youtube.com/watch?v=mWdxGajUiS8
+
+D5. Índice de Rand ajustado (¿dos agrupaciones coinciden?)
+    (LECTURA) Documentación de scikit-learn, con la fórmula y ejemplos:
+    https://scikit-learn.org/stable/modules/clustering.html#rand-index
+
+
+BLOQUE E. CLASIFICACIÓN (notebook 3)
+------------------------------------
+
+E1. Regresión logística
+    Dónde: el clasificador elegido para "¿mañana > 90 ppb?".
+    Video: StatQuest - Logistic Regression
+    https://www.youtube.com/watch?v=yIYKR4sgzI8
+
+E2. Regularización (el parámetro C de la logística)
+    Video: StatQuest - Regularization Part 1: Ridge (L2) Regression
+    https://www.youtube.com/watch?v=Q81RR3yKn30
+
+E3. Bosque aleatorio
+    Dónde: el modelo con el que se compara la logística.
+    Video: StatQuest - Random Forests Part 1 - Building, Using and Evaluating
+    https://www.youtube.com/watch?v=J4Wdy0Wc_xQ
+
+E4. Importancia por permutación
+    Dónde: figura 15.
+    (LECTURA) Documentación de scikit-learn:
+    https://scikit-learn.org/stable/modules/permutation_importance.html
+
+
+RUTA CORTA (si solo hay tiempo para lo indispensable, en este orden)
+--------------------------------------------------------------------
+B1 -> B2 -> B3 -> B6 -> A3 -> B9 -> B13 -> C3 -> D1 -> D2 -> E1
+Con esos 11 se entiende el 80 % del proyecto.

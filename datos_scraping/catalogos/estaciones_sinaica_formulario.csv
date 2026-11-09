@@ -1,0 +1,33 @@
+station_id,station_name,station_code
+240,Acolman,ACO
+242,Ajusco Medio,AJM
+243,Atizapán,ATI
+300,Benito Juárez,BJU
+244,Camarones,CAM
+245,Centro de Ciencias de la Atmósfera,CCA
+246,Chalco,CHO
+248,Cuajimalpa,CUA
+249,Cuautitlán,CUT
+250,FES Acatlán,FAC
+431,FES Aragón,FAR
+302,Gustavo A. Madero,GAM
+251,Hospital General de México,HGM
+252,Iztacalco,IZT
+253,La Presa,LPR
+255,Lomas,LOM
+254,Los Laureles,LLA
+256,Merced,MER
+263,Miguel Hidalgo,MGH
+331,Netzahualcóyotl Sur,NTS
+258,Nezahualcóyotl,NEZ
+259,Pedregal,PED
+260,San Agustín,SAG
+262,Santa Fe,SFE
+432,Santiago Acahualtepec,SAC
+265,Tlahuac,TAH
+266,Tlalnepantla,TLA
+267,Tultitlán,TLI
+268,UAM Iztapalapa,UIZ
+269,UAM Xochimilco,UAX
+270,Villa de las Flores,VIF
+271,Xalostoc,XAL

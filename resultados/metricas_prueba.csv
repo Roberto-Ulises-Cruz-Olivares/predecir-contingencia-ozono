@@ -1,0 +1,6 @@
+,MAE,RMSE,MASE,sesgo
+"Armónica K=2 + día sem. + ARIMA(1, 0, 0)",17.455,22.018,0.883,2.005
+"SARIMA(1,1,1)(1,0,1)7",17.598,22.335,0.890,0.084
+Persistencia (ayer),19.294,24.925,0.976,-0.076
+Climatología (día del año),21.652,26.974,1.095,4.257
+Ingenuo semanal (hace 7 días),27.654,34.844,1.399,0.076

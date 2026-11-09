@@ -1,0 +1,33 @@
+{
+ "estaciones_pca": 26,
+ "varianza_cp1": 0.658,
+ "varianza_cp2": 0.184,
+ "componentes_90pct": 3,
+ "k_zonas": 3,
+ "silueta": 0.395,
+ "rand_kmeans_vs_ward": 1.0,
+ "rand_minimo_al_quitar_un_anio": 0.696,
+ "particion": "entrenamiento hasta 2021-12-31, validación 2022-01-01 a 2023-12-31, prueba desde 2024-01-01",
+ "prueba_dias": 999,
+ "modelo_clasificacion": "Logística C=0.01",
+ "umbral": 0.56,
+ "prueba_exactitud": 0.765,
+ "prueba_exactitud balanceada": 0.706,
+ "prueba_F1": 0.835,
+ "prueba_AUC": 0.814,
+ "prueba_Brier": 0.158,
+ "solo_max_hoy_exactitud": 0.7,
+ "solo_max_hoy_exactitud balanceada": 0.724,
+ "solo_max_hoy_AUC": 0.803,
+ "solo_max_hoy_Brier": 0.162,
+ "ganancia_AUC_vs_solo_max_hoy": 0.011,
+ "ganancia_AUC_IC95": [
+  -0.0,
+  0.022
+ ],
+ "persistencia_exactitud": 0.75,
+ "persistencia_exactitud balanceada": 0.704,
+ "persistencia_F1": 0.82,
+ "persistencia_Brier": 0.25,
+ "tasa_base_Brier": 0.216
+}

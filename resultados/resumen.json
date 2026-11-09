@@ -1,0 +1,21 @@
+{
+  "periodo_datos": "2015-01-01 a 2026-11-09",
+  "dias_con_dato": 4309,
+  "pct_dias_sobre_nom": 64.8,
+  "modelo": "Armónica K=2 + día sem. + ARIMA(1, 0, 0)",
+  "phi_ar1": 0.512,
+  "prueba": "2024-01-01 a 2026-10-21 (1005 días)",
+  "MAE_modelo": 17.46,
+  "RMSE_modelo": 22.02,
+  "RMSE_persistencia": 24.92,
+  "mejora_RMSE_vs_persistencia_pct": 11.7,
+  "DM_p_vs_persistencia": "2.4e-11",
+  "cobertura_95": 0.941,
+  "ultimo_dia_con_dato": "2026-11-08",
+  "horizonte_significativo_vs_climatologia_dias": 3,
+  "AUC_155_persistencia": 0.897,
+  "mejora_horaria_vs_ingenuo_pct": 16.3,
+  "eventos_155_prueba": 30,
+  "AUC_155": 0.912,
+  "BSS_155": 0.115
+}

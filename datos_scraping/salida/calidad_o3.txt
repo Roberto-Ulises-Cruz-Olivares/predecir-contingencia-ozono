@@ -1,0 +1,43 @@
+REPORTE DE CALIDAD - O3 (ppb)
+================================================================
+Archivos: 3295 | valores leídos: 2,103,690 | fuentes: {'sinaica': 1954891, 'sinaica_prelim': 148799}
+Horas fuera de 1..24 descartadas: 0
+Cruce sinaica vs sinaica_prelim: 73 horas en común | idénticas 87.7% | dif. media 0.25 ppb
+Duplicados resueltos (prioridad rama > opendata > sinaica > web > sinaica_prelim): 73
+Negativos eliminados: 0
+Fuera de rango plausible (> 350 ppb, excluidos de las tablas): 0
+Sensor 'pegado' (>= 6 h idénticas, solo marcado): 143
+Picos aislados en datos preliminares (excluidos de las tablas): 6
+Valores preliminares (sin validar) en la tabla final: 148,726 | desde 2024-10-18
+
+Periodo: 2015-01-01 a 2026-11-09 | estaciones: 26
+Valores finales: 2,103,617 (tabla horaria por estación)
+Horas de red: 101,648 | días: 4,318 | días con < 10 estaciones válidas: 9
+
+Estaciones con menor completitud (dentro de su periodo activo):
+                min                 max  completitud
+estacion                                            
+ACO      2015-01-01 2026-11-07 05:00:00        0.596
+XAL      2015-01-14 2026-11-09 10:00:00        0.606
+HGM      2015-01-01 2026-11-09 10:00:00        0.651
+TLI      2015-01-01 2026-11-09 10:00:00        0.667
+AJM      2015-01-01 2026-11-09 10:00:00        0.727
+TAH      2015-01-01 2026-11-09 10:00:00        0.741
+FAR      2019-03-01 2026-11-09 10:00:00        0.768
+IZT      2015-01-01 2026-11-09 10:00:00        0.773
+
+Días por año sobre la NOM (90 ppb, 1 h) y con máximo >= 155 ppb (umbral Fase I):
+      dias  max_anual  dias_sobre_nom  dias_fase1
+anio                                             
+2015   365      179.0             229           8
+2016   366      210.0             213          16
+2017   365      190.0             245          10
+2018   365      179.0             248           3
+2019   365      159.0             235           3
+2020   366      159.0             233           1
+2021   365      159.0             215           2
+2022   365      170.0             225           6
+2023   365      171.0             238           4
+2024   366      187.0             235          16
+2025   365      167.0             256           5
+2026   300      168.0             223           9

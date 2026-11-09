@@ -1,0 +1,11 @@
+# Versiones con las que se ejecutó el proyecto (noviembre de 2026). Python 3.12.
+# Después de instalar:  python -m playwright install chromium
+playwright==1.64.1
+pandas==3.1.1
+numpy==2.5.4
+matplotlib==3.11.2
+statsmodels==0.15.0
+scipy==1.18.1
+scikit-learn==1.9.1
+jupyter==1.1.1
+nbconvert==7.17.2

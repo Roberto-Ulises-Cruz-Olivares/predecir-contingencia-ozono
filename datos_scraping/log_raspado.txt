@@ -1,0 +1,84 @@
+﻿[sinaica-navegador] 32 estaciones x 143 meses (2015-01 -> 2026-11), 3 navegador(es) en paralelo, pausa 1.0 s
+[N1] ACO: 61,939 valores nuevos (340 s) | total 205,760 valores, 448 búsquedas, 402/4,576 estación-mes
+[N2] AJM: 75,551 valores nuevos (373 s) | total 217,138 valores, 483 búsquedas, 428/4,576 estación-mes
+[N2] CAM: el formulario no ofrece ozono; se omite
+[N3] ATI: 83,770 valores nuevos (409 s) | total 237,614 valores, 526 búsquedas, 460/4,576 estación-mes
+[N1] BJU: 84,123 valores nuevos (446 s) | total 447,836 valores, 885 búsquedas, 793/4,576 estación-mes
+[N1] CHO: el formulario no ofrece ozono; se omite
+[N3] CCA: 94,888 valores nuevos (486 s) | total 499,320 valores, 1,005 búsquedas, 878/4,576 estación-mes
+[N2] CUA: 84,781 valores nuevos (494 s) | total 501,303 valores, 1,009 búsquedas, 882/4,576 estación-mes
+[N3] CUT 2021-06 V: intento 1 falló (Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#fechaIni")
+)
+[N1] FAC 2024-05 C: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button[data-id='estacion']")
+    - locator reso)
+[N1] FAC 2024-05 C: intento 2 falló (Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(".bootstrap-select.open .bs-searchbox input, .)
+[N3] CUT 2021-06 V: intento 2 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#actualiza")
+    - locator resolved to <input t)
+[N2] FAR 2024-02 C: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button[data-id='estacion']")
+    - locator reso)
+[N1] FAC: 92,717 valores nuevos (554 s) | total 699,572 valores, 1,414 búsquedas, 1,249/4,576 estación-mes
+[N2] FAR: 51,804 valores nuevos (488 s) | total 702,767 valores, 1,424 búsquedas, 1,256/4,576 estación-mes
+[N3] CUT 2024-03 C: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button[data-id='estacion']")
+    - locator reso)
+[N3] CUT 2024-03 C: intento 2 falló (Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(".bootstrap-select.open .bs-searchbox input, .)
+[N3] CUT: 92,299 valores nuevos (692 s) | total 805,946 valores, 1,611 búsquedas, 1,424/4,576 estación-mes
+[N1] HGM: 67,623 valores nuevos (463 s) | total 925,358 valores, 1,887 búsquedas, 1,667/4,576 estación-mes
+[N2] IZT: 80,282 valores nuevos (471 s) | total 929,312 valores, 1,903 búsquedas, 1,678/4,576 estación-mes
+[N1] LOM: el formulario no ofrece ozono; se omite
+[N3] GAM: 81,268 valores nuevos (478 s) | total 1,011,767 valores, 2,058 búsquedas, 1,808/4,576 estación-mes
+[N2] LLA 2024-01 C: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button[data-id='estacion']")
+    - locator reso)
+[N1] MGH 2021-09 V: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#actualiza")
+    - locator resolved to <input t)
+[N1] MGH 2022-01 V: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#actualiza")
+    - locator resolved to <input t)
+[N3] LPR: 86,116 valores nuevos (394 s) | total 1,176,820 valores, 2,366 búsquedas, 2,082/4,576 estación-mes
+[N2] LLA: 85,308 valores nuevos (625 s) | total 1,180,947 valores, 2,377 búsquedas, 2,089/4,576 estación-mes
+[N2] NTS: el formulario no ofrece ozono; se omite
+[N3] MER: 93,710 valores nuevos (398 s) | total 1,315,589 valores, 2,607 búsquedas, 2,299/4,576 estación-mes
+[N2] SAG: 85,679 valores nuevos (672 s) | total 1,422,513 valores, 2,800 búsquedas, 2,472/4,576 estación-mes
+[N3] NEZ: 88,572 valores nuevos (594 s) | total 1,463,487 valores, 2,900 búsquedas, 2,547/4,576 estación-mes
+[N3] SFE 2015-01 V: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#actualiza")
+    - locator resolved to <input d)
+[N3] SFE: el formulario no ofrece ozono; se omite
+[N3] TLA: el formulario no ofrece ozono; se omite
+[N2] TAH 2022-12 V: intento 1 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#actualiza")
+    - locator resolved to <input t)
+[N2] TAH 2022-12 V: intento 2 falló (Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#actualiza")
+    - locator resolved to <input t)
+[N2] TAH: 76,993 valores nuevos (831 s) | total 1,609,716 valores, 3,184 búsquedas, 2,792/4,576 estación-mes
+[N3] UAX: 90,209 valores nuevos (485 s) | total 1,621,031 valores, 3,211 búsquedas, 2,811/4,576 estación-mes
+[N1] MGH: 95,216 valores nuevos (2396 s) | total 1,733,590 valores, 3,410 búsquedas, 2,988/4,576 estación-mes
+[N2] UIZ: 89,513 valores nuevos (299 s) | total 1,754,143 valores, 3,457 búsquedas, 3,021/4,576 estación-mes
+[N2] XAL: 62,772 valores nuevos (327 s) | total 1,893,126 valores, 3,762 búsquedas, 3,283/4,576 estación-mes
+[N1] PED: 90,976 valores nuevos (399 s) | total 1,896,109 valores, 3,773 búsquedas, 3,289/4,576 estación-mes
+[N1] SAC: 53,488 valores nuevos (258 s) | total 1,949,597 valores, 3,936 búsquedas, 3,432/4,576 estación-mes
+[N1] TLI: 69,277 valores nuevos (266 s) | total 2,018,874 valores, 4,097 búsquedas, 3,575/4,576 estación-mes
+[N1] VIF: 84,379 valores nuevos (271 s) | total 2,103,253 valores, 4,262 búsquedas, 3,718/4,576 estación-mes
+[sinaica-navegador] listo en 91.1 min: 4,262 búsquedas en el formulario, 2,103,253 valores nuevos en datos_scraping\largo | sin ozono: CAM, CHO, LOM, NTS, SFE, TLA
